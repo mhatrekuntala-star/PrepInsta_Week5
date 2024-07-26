@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Doctor Appointment System</h1>
+    </header>
+    
+    <main>
+        <section class="appointment-form">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="number">Contact No:</label>
+                <input type="number" id="number" name="number" required>
+                
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Appointment Time:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <label for="doctor">Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="Dr. Mhatre">Dr. Mhatre</option>
+                    <option value="Dr. Pillai">Dr. Pillai</option>
+                    <option value="Dr. Shinde">Dr. Shinde</option>
+                </select>
+                
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+        
+        <section class="appointment-list">
+            <h2>Upcoming Appointments</h2>
+            <ul id="appointmentList">
+            </ul>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
